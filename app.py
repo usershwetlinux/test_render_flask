@@ -8,7 +8,7 @@ def home():
 
 @app.route('/get_image')
 def get_image():
-    return send_from_directory('static', 'uploads/sample_image.jpg')
+    return send_from_directory('static/upload', 'example.jpg')
 
 if __name__ == '__main__':
     app.run(debug=True)
